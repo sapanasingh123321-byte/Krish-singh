@@ -1,0 +1,159 @@
+<html>
+  <head><title>new webpage</title>
+  <style>
+    
+    body{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:#e9e9e9;
+      font-family:'Brush Script MT', cursive;
+  
+      
+    }
+    .kphoto{
+      position:absolute;
+      background-image: url('krish.jpg');
+      background-size: cover;
+      background-position: center center;
+      border-radius: 180px;
+      border: solid black;
+      box-shadow: 10px 10px 20px #babecc,-10px -10px 20px #babecc;
+      top: -100px;
+      height: 200px;
+      width: 200px;
+    }
+    .banner{
+      display: flex;
+      background-color: ;
+      box-shadow: 10px 10px 20px #babecc,-10px -10px 20px #babecc;
+      background-color:#fff;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      color: #000;
+      border:;
+      border-radius: 60px;
+      font-size: 35px;
+      top: 100px;
+    }
+    .aboutme{
+    
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60%;
+      left: 2%;
+      border-radius: 20px;
+      background-color:#fff;
+      border:none;
+      box-shadow: 15px 15px 20px #b8bcca, -15px -15px 20px #e9e9e9;
+      height: 30%;
+      width: 40%;
+    }
+    .friends{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60%;
+      right: 2%;
+      border-radius: 20px;
+      background-color: white;
+      border:none;
+         box-shadow: 15px 15px 20px #babecc,-15px -15px 20px #e9e9e9;
+      height: 30%;
+      width: 40%;
+    }
+    
+      .relatives{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 110%;
+      right: 2%;
+      border-radius: 20px;
+      background-color: white;
+      border:none;
+         box-shadow: 15px 15px 20px #babecc,-15px -15px 20px #e9e9e9;
+      height: 30%;
+      width: 90%;
+    }
+    .goto{
+      position: absolute;
+      display: flex;
+        justify-content: center;
+      align-items: center;
+      border: none;
+       box-shadow: 5px 5px 10px #baca,  -5px -5px 10px #baca;
+      font-size: 50px;
+      border-radius: 20px;
+      height: 40%;
+      width: 60%;
+      bottom: 10%;
+      left: 20%;
+      color: black;
+      background-color:white;
+      
+      transition: height 2s,width 2s,background-color 0.1s;
+    }
+    .goto:hover{
+      background-color: #babecc;
+      height: 45%;
+      width: 65%;
+    }
+  h3{
+    font-family:Times New Roman;
+    position: absolute;
+    top: 170px;
+    color: gray;
+    
+  }
+  .password{
+    
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  top: 50%;
+    border-radius: 10px;
+    height: 30%;
+width: 60%;
+    background-color:#fff;
+    z-index: 10;
+  }
+  </style>
+  </head>
+  <body>
+ 
+    <div class="banner"><div class="kphoto"></div><br><br><h1 >🥰Kush singh🥰<h3>( DEVELOPER )</h3></h1>
+   <h2>welcome to my personal website<hr></h2>
+    <div class="aboutme">ABOUT ME:<a href="about me.html"><div class="goto">visit ></div></a></div>
+     <div class="friends">FRIENDS:<a href="friends.html"><div class="goto">visit ></div></a></div>
+         <div class="relatives">RELATIVES:<button class="goto" onclick="password()">VISIT</button></div>
+    
+    </div>
+    <script>
+
+function password(){
+  var num = prompt("password is required to visit this site");
+if(num === "1219"){
+  open("relatives.html");
+  console.log("hello");
+}else{
+  open("error.html");
+}
+  
+  
+}
+  
+    </script>
+  </body>
+</html>
